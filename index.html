@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="focus-body">
+            <h1>FOCUS MODE</h1>
+            <p>
+              THE PHONE HAS BEEN DISTRACTED YOU <br />
+              <span id="count">0</span> <br />
+              TIMES
+            </p>
+            <button id="count-button">Ooops, I did it gain!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="icon-buttons">
+            <i id="birdIcon" class="fa-solid fa-dove"></i>
+            <audio id="audioBirdPlay" controls>
+              <source src="assets/birds-symphony-204968.mp3" type="audio/mp3" />
+            </audio>
+
+            <i id="coffeeIcon" class="fa-solid fa-mug-saucer"></i>
+            <audio id="audioCoffeePlay" controls>
+              <source
+                src="assets/busy-coffee-shop-live-acoustic-guitar-music-61678.mp3"
+              />
+            </audio>
+
+            <i id="restaurantIcon" class="fa-solid fa-martini-glass-citrus"></i>
+            <audio id="audioRestaurantPlay" controls="controls">
+              <source
+                src="assets/busy-restaurant-dining-room-ambience-128466.mp3"
+                type="audio/mp3"
+              />
+            </audio>
+
+            <i id="musico" class="fa-solid fa-music"></i>
+
+            <input type="range" id="volume-input" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
