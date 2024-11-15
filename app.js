@@ -58,3 +58,10 @@ volumeInput.addEventListener("input", function()
     audioCoffeePlay.volume = volumeInput.value  / 100;
     audioRestaurantPlay.volume = volumeInput.value / 100;
 })
+
+const resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", function()
+{
+    const count = document.getElementById("count");
+    count.innerHTML = 0;
+})
